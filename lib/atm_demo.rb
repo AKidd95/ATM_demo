@@ -7,4 +7,8 @@ class ATM
     @funds = 1000
   end
 
+  def withdraw(number)
+    @funds -= number
+  end
+
 end
