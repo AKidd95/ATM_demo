@@ -1,13 +1,15 @@
 class Account
   require 'date'
-  attr_accessor :pin_code, :balance, :account_status
+  attr_accessor :pin_code, :balance, :account_status, :owner
 
   STANDARD_VALIDITY_YRS = 5
 
-  def initialize()
+  def initialize(attrs = {})
     @pin_code = generate_pin
     @balance = 0
     @account_status = :active
+    set_owner(attrs[:owner])
+
   end
 
   def exp_date
@@ -17,10 +19,18 @@ class Account
   def deactivate
     @account_status = :deactivated
   end
-  
+
   private
   def generate_pin
     rand(1000..9999)
+  end
+
+  def set_owner(obj)
+    obj == nil ? missing_owner : @owner = obj
+  end
+
+  def missing_owner
+    raise "An Account owner is required"
   end
 
 end
