@@ -71,5 +71,4 @@ class ATM
     end
     bills
   end
-
 end
