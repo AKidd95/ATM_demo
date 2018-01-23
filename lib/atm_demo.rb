@@ -31,25 +31,18 @@ class ATM
     amount > account.balance
   end
 
-  private
-
   def insufficient_funds_in_ATM?(amount)
     @funds < amount
   end
-
-  private
 
   def incorrect_pin?(pin_code, actual_pin)
     pin_code != actual_pin
   end
 
-  private
-
   def expired_card?(exp_date)
     Date.strptime(exp_date, '%m/%y') < Date.today
   end
 
-  private
   def account_disabled?(account_status)
     account_status == :disabled
   end
