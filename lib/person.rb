@@ -11,14 +11,6 @@ class Person
     @account = nil
   end
 
-  def set_name(name)
-    name == nil ? missing_name : :name
-  end
-
-  def missing_name
-    raise "A name is required"
-  end
-
   def create_account
     @account = Account.new(owner: self)
   end
@@ -38,25 +30,36 @@ class Person
     @account.balance += value
   end
 
- def withdraw_funds(args)
-   args[:atm] == nil ? missing_atm : atm = args[:atm]
-   account = @account
-   amount = args[:amount]
-   pin_code = args[:pin_code]
-   response = atm.withdraw(amount, pin_code, account)
-   response[:status] ? increase_cash(response) : response
- end
+  def withdraw_funds(args)
+     args[:atm] == nil ? missing_atm : atm = args[:atm]
+     account = @account
+     amount = args[:amount]
+     pin_code = args[:pin_code]
+     #IS THIS REALLY HOW WE DO THIS???? =)
+     @cash += args[:amount]
+     @account.balance -= args[:amount]
+     response = atm.withdraw(amount, pin_code, account)
+     response[:status] ? increase_cash(response) : response
+   end
 
- def increase_cash(response)
-  @cash += response[:amount]
-end
+   def increase_cash(response)
+    @cash += response[:amount]
+   end
 
- def missing_account
-   raise RuntimeError, 'No account present'
- end
+   def set_name(name)
+     name == nil ? missing_name : :name
+   end
 
- def missing_atm
-   raise RuntimeError, 'An ATM is required'
- end
+   def missing_name
+     raise RuntimeError, 'A name is required'
+   end
+
+   def missing_account
+     raise RuntimeError, 'No account present'
+   end
+
+   def missing_atm
+     raise RuntimeError, 'An ATM is required'
+   end
 
 end
