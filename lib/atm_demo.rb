@@ -1,5 +1,5 @@
-
-
+require 'account'
+require 'person'
 class ATM
   attr_accessor :funds
   require 'date'

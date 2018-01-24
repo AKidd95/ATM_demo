@@ -9,7 +9,6 @@ class Account
     @balance = 0
     @account_status = :active
     set_owner(attrs[:owner])
-
   end
 
   def exp_date
