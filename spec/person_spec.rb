@@ -41,6 +41,11 @@ describe Person do
       expect(subject.deposit(100)).to be_truthy
     end
 
+    it 'can not deposit funds if insufficient cash' do
+      subject.cash = 0
+      expect { subject.deposit(100) }.to raise_error 'Insufficient cash'
+    end
+
     it 'funds are added to the accounts balance - deducted from cash' do
       subject.cash = 100
       subject.deposit(100)

@@ -27,8 +27,12 @@ class Person
   private
 
   def deposit_funds(value)
-    @cash -= value
-    @account.balance += value
+    if @cash > value
+      @cash -= value
+      @account.balance += value
+    else
+      insufficient_cash
+    end
   end
 
   def withdraw_funds(args)
@@ -56,6 +60,10 @@ class Person
 
    def missing_account
      raise RuntimeError, 'No account present'
+   end
+
+   def insufficient_cash
+     raise RuntimeError, 'Insufficient cash'
    end
 
    def missing_atm
