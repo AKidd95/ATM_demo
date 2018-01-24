@@ -1,6 +1,5 @@
 language: ruby
-dist: trusty
 rvm:
-  - rbx-3
+  - 2.4.1
 
-install: gem install rails
+script: bundle exec rspec
