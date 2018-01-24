@@ -1,3 +1,6 @@
 language: ruby
+dist: trusty
 rvm:
-  - 2.4
+  - rbx-3
+
+install: gem install rails
