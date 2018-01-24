@@ -1,5 +1,5 @@
-require 'account'
-require 'person'
+require './lib/account.rb'
+require './lib/person.rb'
 class ATM
   attr_accessor :funds
   require 'date'

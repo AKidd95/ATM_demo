@@ -1,6 +1,7 @@
+require 'pry'
 
-require './lib/account'
-require './lib/atm_demo'
+require './lib/account.rb'
+require './lib/person.rb'
 
 class Person
   attr_accessor :name, :cash, :account
@@ -34,10 +35,9 @@ class Person
      args[:atm] == nil ? missing_atm : atm = args[:atm]
      account = @account
      amount = args[:amount]
-     pin_code = args[:pin_code]
+     pin_code = args[:pin]
      #IS THIS REALLY HOW WE DO THIS???? =)
-     @cash += args[:amount]
-     @account.balance -= args[:amount]
+     #binding.pry
      response = atm.withdraw(amount, pin_code, account)
      response[:status] ? increase_cash(response) : response
    end
@@ -47,7 +47,7 @@ class Person
    end
 
    def set_name(name)
-     name == nil ? missing_name : :name
+     name == nil ? missing_name : name
    end
 
    def missing_name
