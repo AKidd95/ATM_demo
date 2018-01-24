@@ -8,7 +8,7 @@ class Person
 
   def initialize(attrs = {})
     @name = set_name(attrs[:name])
-    @cash = 0
+    @cash = 1000
     @account = nil
   end
 
@@ -27,7 +27,7 @@ class Person
   private
 
   def deposit_funds(value)
-    if @cash > value
+    if @cash >= value
       @cash -= value
       @account.balance += value
     else
