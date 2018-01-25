@@ -10,16 +10,16 @@ class ATM
 
   def withdraw(amount, pin_code, account)
     case
-    when insufficient_funds_in_account?(amount, account)
-      return_error_message('insufficient funds')
-    when insufficient_funds_in_ATM?(amount)
-      return_error_message('insufficient funds in ATM')
     when incorrect_pin?(pin_code, account.pin_code)
       return_error_message('Wrong pin')
     when expired_card?(account.exp_date)
       return_error_message('expired card')
     when account_disabled?(account.account_status)
       return_error_message('account disabled')
+    when insufficient_funds_in_account?(amount, account)
+      return_error_message('insufficient funds')
+    when insufficient_funds_in_ATM?(amount)
+      return_error_message('insufficient funds in ATM')
     else
       perform_transaction(amount,account)
     end

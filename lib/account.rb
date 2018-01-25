@@ -3,7 +3,7 @@ require 'pry'
 class Account
   require 'date'
   attr_accessor :balance, :account_status, :owner
-  attr_reader :pin_code
+  attr_reader :pin_code, :exp_date
 
   STANDARD_VALIDITY_YRS = 5
 
@@ -12,9 +12,10 @@ class Account
     @balance = attrs[:balance] || 0
     @account_status = :active
     set_owner(attrs[:owner])
+    @exp_date = set_exp_date
   end
 
-  def exp_date
+  def set_exp_date
     Date.today.next_year(STANDARD_VALIDITY_YRS).strftime("%m/%y")
   end
 

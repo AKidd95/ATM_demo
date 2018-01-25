@@ -40,6 +40,7 @@ class Person
      account = @account
      amount = args[:amount]
      pin_code = args[:pin]
+     exp_date = args[:exp_date]
      #IS THIS REALLY HOW WE DO THIS???? =)
      #binding.pry
      response = atm.withdraw(amount, pin_code, account)
