@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/Users/hermionekidd/atm_demo/spec/account_spec.rb": [
+=======
+      "/Users/davidboll/projects/ATM_demo/spec/account_spec.rb": [
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         1,
         null,
         1,
@@ -42,7 +46,13 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/hermionekidd/atm_demo/lib/account.rb": [
+=======
+      "/Users/davidboll/projects/ATM_demo/lib/account.rb": [
+        1,
+        null,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         1,
         1,
         1,
@@ -51,6 +61,7 @@
         1,
         null,
         1,
+<<<<<<< HEAD
         14,
         14,
         14,
@@ -60,6 +71,16 @@
         null,
         1,
         14,
+=======
+        15,
+        15,
+        15,
+        15,
+        null,
+        null,
+        1,
+        2,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         null,
         null,
         1,
@@ -68,11 +89,19 @@
         null,
         1,
         1,
+<<<<<<< HEAD
         14,
         null,
         null,
         1,
         14,
+=======
+        15,
+        null,
+        null,
+        1,
+        15,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         null,
         null,
         1,
@@ -81,7 +110,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/hermionekidd/atm_demo/spec/atm_spec.rb": [
+=======
+      "/Users/davidboll/projects/ATM_demo/spec/atm_spec.rb": [
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         1,
         null,
         1,
@@ -144,7 +177,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/hermionekidd/atm_demo/lib/atm_demo.rb": [
+=======
+      "/Users/davidboll/projects/ATM_demo/lib/atm_demo.rb": [
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         1,
         1,
         1,
@@ -158,17 +195,25 @@
         1,
         null,
         null,
+<<<<<<< HEAD
         3,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
+=======
         2,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+<<<<<<< HEAD
+        2,
+=======
+        3,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         9,
         null,
         null,
@@ -177,14 +222,25 @@
         1,
         null,
         null,
+<<<<<<< HEAD
+        7,
+=======
+        6,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        1,
+<<<<<<< HEAD
+=======
         7,
         null,
         null,
         1,
-        9,
-        null,
-        null,
-        1,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         6,
         null,
         null,
@@ -198,15 +254,20 @@
         null,
         1,
         3,
+<<<<<<< HEAD
         null,
         null,
         1,
         2,
         2,
+=======
+        3,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         null,
         null,
         null,
         null,
+<<<<<<< HEAD
         2,
         null,
         null,
@@ -224,6 +285,26 @@
         null
       ],
       "/Users/hermionekidd/atm_demo/lib/person.rb": [
+=======
+        3,
+        null,
+        null,
+        1,
+        3,
+        3,
+        3,
+        9,
+        11,
+        11,
+        null,
+        null,
+        3,
+        null,
+        null
+      ],
+      "/Users/davidboll/projects/ATM_demo/lib/person.rb": [
+        1,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         null,
         1,
         1,
@@ -232,6 +313,7 @@
         1,
         null,
         1,
+<<<<<<< HEAD
         12,
         11,
         11,
@@ -243,6 +325,19 @@
         null,
         1,
         4,
+=======
+        13,
+        12,
+        12,
+        null,
+        null,
+        1,
+        8,
+        null,
+        null,
+        1,
+        5,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         null,
         null,
         1,
@@ -252,9 +347,19 @@
         1,
         null,
         1,
+<<<<<<< HEAD
         3,
         3,
         null,
+=======
+        4,
+        3,
+        3,
+        null,
+        1,
+        null,
+        null,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         null,
         1,
         3,
@@ -262,18 +367,34 @@
         2,
         2,
         null,
+<<<<<<< HEAD
         2,
         2,
+=======
+        null,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         2,
         2,
         null,
         null,
         1,
+<<<<<<< HEAD
         0,
         null,
         null,
         1,
         12,
+=======
+        1,
+        null,
+        null,
+        1,
+        13,
+        null,
+        null,
+        1,
+        1,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         null,
         null,
         1,
@@ -290,13 +411,21 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/hermionekidd/atm_demo/spec/person_spec.rb": [
+=======
+      "/Users/davidboll/projects/ATM_demo/spec/person_spec.rb": [
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         1,
         1,
         null,
         1,
         null,
+<<<<<<< HEAD
         12,
+=======
+        13,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         null,
         1,
         1,
@@ -329,12 +458,27 @@
         1,
         3,
         null,
+<<<<<<< HEAD
         6,
         1,
         1,
         null,
         null,
         1,
+=======
+        7,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        null,
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
         1,
         1,
         1,
@@ -369,6 +513,10 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1516801639
+=======
+    "timestamp": 1516809383
+>>>>>>> 82557658e192a1837effe0b90c256ad0e3cd6332
   }
 }

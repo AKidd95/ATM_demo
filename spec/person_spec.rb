@@ -13,8 +13,8 @@ describe Person do
     expect { described_class.new }.to raise_error 'A name is required'
   end
 
-  it 'is expected to have a :cash attribute with value of 0 on initialize' do
-    expect(subject.cash).to eq 0
+  it 'is expected to have a :cash attribute with value of 1000 on initialize' do
+    expect(subject.cash).to eq 1000
   end
 
   it 'is expected to have a :account attribute' do
@@ -41,7 +41,13 @@ describe Person do
       expect(subject.deposit(100)).to be_truthy
     end
 
+    it 'can not deposit funds if insufficient cash' do
+      subject.cash = 0
+      expect { subject.deposit(100) }.to raise_error 'Insufficient cash'
+    end
+
     it 'funds are added to the accounts balance - deducted from cash' do
+      #binding.pry
       subject.cash = 100
       subject.deposit(100)
       expect(subject.account.balance).to be 100
