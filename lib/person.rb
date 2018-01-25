@@ -42,7 +42,7 @@ class Person
      pin_code = args[:pin]
      exp_date = args[:exp_date]
      #IS THIS REALLY HOW WE DO THIS???? =)
-     #binding.pry
+     binding.pry
      response = atm.withdraw(amount, pin_code, account)
      response[:status] ? increase_cash(response) : response
    end

@@ -50,7 +50,7 @@ class ATM
   end
 
   def account_disabled?(account_status)
-    account_status == :disabled
+    account_status == :deactivated
   end
 
   def perform_transaction(amount, account)
